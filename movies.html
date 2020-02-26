@@ -1,0 +1,136 @@
+<html>
+
+<head>
+	<title>Google</title>
+  <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+	<style>
+    html {
+      scroll-behavior: smooth;
+    }
+		body {
+			margin: 0;
+			padding: 0;
+			background-color: #111;
+			color: #0f0;
+      font-family: Rubik, bold
+		}
+
+		.topbar {
+      top: 0;
+			width: 100%;
+			height: 50px;
+			background-color: #333;
+			color: #fff;
+			box-shadow: 0px 0px 10px black;
+			position: fixed;
+      vertical-align: top;
+		}
+
+    .container {
+      margin-top: 75px;
+      text-align: center;
+    }
+
+    .container h1 {
+      font-size: 50px;
+    }
+
+    .center {
+      display: inline-block;
+    }
+
+    .sidebar {
+      height: 100%;
+      width: 0px;
+      z-index: 2;
+      position: fixed;
+      background-color: #222;
+      top: 0;
+      box-shadow: 0px 0px 10px black;
+      transition: 0.5s;
+      overflow-x: hidden;
+      text-align: center;
+      line-height: 1.6;
+      border-radius: 20px;
+    }
+
+    .sidebar a {
+      color: #fff;
+      font-size: 20px;
+      text-decoration: none;
+      transition: 0.2s;
+      cursor: default;
+    }
+
+    .sidebar a:hover {
+      text-shadow: 0px 0px 5px white;
+    }
+
+    .button {
+      appearance: button;
+      text-decoration: none;
+      color: #000;
+      background: #0f0;
+      padding: 10px;
+      border-radius: 20px;
+    }
+
+    .button:hover {
+      background: #080;
+    }
+
+    
+	</style>
+  <link rel="icon" href="/img/zrk.png">
+  <script>
+    function openNav(method) {
+      if (method == "open") {
+        document.getElementById('sb').style.width = "200px";
+      } else if (method == "close") {
+        document.getElementById('sb').style.width = "0";
+      }
+    }
+
+    function iframeLink(link) {
+      document.body.innerHTML = document.body.innerHTML = "<div style='z-index: 9999999; opacity: 0.2; position: absolute; right: 30; bottom: 0;'><h1>ZRK</h1></div><iframe src='" + link + "' style='width: 100%; height: 100%; border: none;' allowfullscreen></iframe>"
+    }
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+	<div class="container">
+    <div class="center">
+      <h1>MOVIES</h1>
+      <p>too poor for netflix/disney+/hulu? want to entertain urself? check out the movie links 🎬</p>
+      <p>all are iframed to prevent it from being logged into ur history</p>
+      <br>
+      <br>
+      <a class="button" href=# onclick="iframeLink('https://gostream.site/')">gostream</a>
+      <br>
+      <br>
+      <br>
+      <a class="button" href=# onclick="iframeLink('https://putlocker.vip/')">putlocker</a>
+      <br>
+      <br>
+      <br>
+      <a class="button" href=# onclick="iframeLink('https://solarmovie.network')">solarmovie</a>
+      <br>
+      <br>
+      <br>
+      <a class="button" href=# onclick="iframeLink('https://putlocker.vip/')">putlocker</a>
+      <br>
+      <br>
+      <br>
+      <a class="button" href=# onclick="iframeLink('https://vumoo.to/')">vumoo</a>
+      <br>
+      <br>
+      <br>
+      <a class="button" href=# onclick="iframeLink('https://xmovies8.work/')">xmovies8 (NOT PORN)</a>
+      <br>
+      <br>
+      <br>
+    </div>
+  </div>
+</body>
+</html>
